@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #C9CED2;
+    font-family: 'Zen Old Mincho',
+        "Times New Roman",
+        "游明朝",
+        "Yu Mincho",
+        "游明朝体",
+        "YuMincho",
+        "ヒラギノ明朝 Pro W3",
+        "Hiragino Mincho Pro",
+        "HiraMinProN-W3",
+        "HGS明朝E",
+        "ＭＳ Ｐ明朝",
+        "MS PMincho",
+        serif;;
+    line-height: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1032px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.section-title {
+    display: block;
+    font-size: 2.25rem;
+    margin-bottom: 40px;
+    color: #7F7749;
+    text-align: center;
+}
+
+#header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+
+#header li {
+    margin-left: 30px;
+}
+
+#header a {
+    color: #ffffff;
+}
+
+/*
+mainvisual
+*/
+#mainvisual {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+.mainvisual__catchtext {
+    font-size: 3vw;
+    line-height: 150%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:5%;
+    z-index: 10;
+}
+
+/*
+concept
+*/
+#concept {
+    margin-bottom: 60px;
+}
+.concept__flex-item {
+    display: flex;
+    justify-content: space-around;
+}
+.concept__item-left {
+    width: 38%;
+    margin-right: 30px;
+}
+.concept__item-right {
+    width: 60%;
+    margin-top: 10%;
+}
+.concept__catchtext {
+    font-size: 1.75rem;
+    padding-bottom: 30px;
+    line-height: 1.7em;
+    color: #A4A497;
+}
+
+
+/*
+menu
+*/
+#menu {
+    margin-bottom: 60px;
+}
+
+.menu__top-title {
+    font-size: 1.75rem;
+    padding-bottom: 15px;
+    line-height: 1.7em;
+    color: #A4A497;
+}
+
+.menu__text {
+    margin-bottom: 30px;
+}
+
+
+.menu__flex-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item-left {
+    width: 52%;
+}
+
+.menu__item-right {
+    width: 45%;
+}
+
+.menu__box-price {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.menu__box-price td {
+    border-bottom: 1px solid #363634;
+    height: 60px;
+}
+
+.menu__amount {
+    text-align: right;
+}
+
+
+/*
+message
+*/
+#message {
+    margin-bottom: 60px;
+}
+
+.message__flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message__item-left {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.message__item-right {
+    width: 50%;
+}
+
+
+/*
+reservation
+*/
+#reservation {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reservation__flex-item {
+    display: flex;
+    justify-content: center;
+}
+
+.reservation__button {
+    width: 30%;
+    color: #ffffff;
+    display: inline-block;
+    background-color: #7F7749;
+    font-size: 1.25rem;
+    padding: 14px 36px;
+    margin: 30px 10px;
+}
+
+
+/*
+footer
+*/
+#footer {
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 20px 0;
+}
+
+#footer .menu {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .menu li {
+    font-size: 0.875rem;
+    padding: 0 20px;
+}
+
+#footer .menu li a {
+    color: #000000;
+}
+
+#footer .copyright {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+    .concept__flex-item {
+        flex-direction: column;
+    }
+    .concept__item-left {
+        width: 100%;
+    }
+    .concept__item-right {
+        width: 100%;
+    }
+
+    .menu__flex-item {
+        flex-direction: column;
+    }
+    .menu__item-left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .menu__item-right {
+        width: 100%;
+    }
+
+    .message__flex-item {
+        flex-direction: column;
+    }
+    .message__item-left {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .message__item-right {
+        width: 100%;
+    }
+
+    .reservation__flex-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reservation__button {
+        width: 90%;
+        margin: 10px;
+    }
+}
