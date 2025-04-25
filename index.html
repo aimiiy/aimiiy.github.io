@@ -12,140 +12,241 @@
 </head>
 
 <body>
-    <header id="header">
-        <h1 class="logo">
-            <a href="index.html">aimiiy</a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#concept">Concept</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservation">ご予約</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-header__inner">
+            <div class="c-logo">
+                <a href="#"><img class="c-logo__img" src="img/logo.svg" alt="aimiiy Private Salon logo"></a>
+            </div>
+
+            <!-- ハンバーガーメニュー制御用のチェックボックス -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+
+            <!-- ハンバーガーアイコン -->
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="p-global-nav">
+                <ul class="p-global-nav__list">
+                    <li><a href="/" class="p-global-nav__link">HOME</a></li>
+                    <li><a href="/menu.html" class="p-global-nav__link">メニュー</a></li>
+                    <li><a href="/beginners.html" class="p-global-nav__link">初めての方へ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div id="mainvisual">
-            <div class="mainvisual__catchtext">
-                <p>
-                    心も身体もほぐれていく<br>
-                    あなただけの特別な時間
-                </p>
+    <main class="l-main">
+        <div class="mainvisual">
+            <div class="mainvisual__inner">
+                <div class="mainvisual__catchtext">
+                    <p>心も身体もほぐれてい</p>
+                    <p>あなただけの特別な時間</p>
+                </div>
+                <div class="c-logo">
+                    <img class="mainvisual__logo" src="img/logo.svg" alt="aimiiy Private Salon logo">
+                </div>
             </div>
-            <img src="img/mainvisual.jpg" alt="room-photo">
+            <img class="mainvisual__img" src="img/mainvisual.jpg" alt="room-photo">
         </div>
 
+        <div class="l-main__inner">
+            <section class="mb-16">
+                <h2 class="section-title">
+                    お知らせ
+                </h2>
+                <ul class="index-news__list">
+                    <li>
+                        <div class="index-news__date">
+                            2025年4月25日
+                        </div>
+                        <div class="index-news__text">
+                            ホームページをリニューアル
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index-news__date">
+                            2024年11月17日
+                        </div>
+                        <div class="index-news__text">
+                            筋膜リンパマッサージを始めました
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index-news__date">
+                            2024年5月31日
+                        </div>
+                        <div class="index-news__text">
+                            プライベートサロン aimiiy オープン
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-        <section id="concept" class="wrapper">
-            <h2 class="section-title">
-                Concept
-            </h2>
+            <section class="mb-16">
+                <h2 class="section-title">
+                    Concept
+                </h2>
 
-            <div class="concept__flex-item">
-                <div class="concept__item-left">
-                    <div class="concept__img">
-                        <img src="img/concept.jpg" alt="dresser">
+                <div class="index-concept-card">
+                    <div class="index-concept-card__img">
+                        <img src="img/concept.jpg" alt="ドレッサー">
                     </div>
-                </div>
-                <div class="concept__item-right">
-                    <div class="concept__text">
-                        <div class="concept__catchtext">
+                    <div class="index-concept__text">
+                        <div class="index-concept-card__title">
                             <p>疲れた心と身体をときほぐす</p>
                             <p>極上の癒しのひととき</p>
                         </div>
-                        <p>阿南市にある完全予約制プライベートサロン aimiiy</p>
-                        <p>あなただけのゆったりとした時間と空間で最高のおもてなしを</p>
-                        <p>心も身体も軽くする特別なひとときをお楽しみください</p>
+                        <p>阿南市にある完全予約制プライベートサロン aimiiy。</p>
+                        <p>あなただけのゆったりとした時間と空間で最高のおもてなしを。</p>
+                        <p>心も身体も軽くする特別なひとときをお楽しみください。</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="menu" class="wrapper">
-            <h2 class="section-title">
-                Menu
-            </h2>
+            <section class="mb-16">
+                <h2 class="section-title">
+                    Menu
+                </h2>
 
-            <div class="menu__top-title">
-                脳洗浄®︎
-            </div>
-
-            <div class="menu__flex-item">
-                <div class="menu__item-left">
-                    <div class="menu__text">
-                        <p>オールハンドの心地よい施術は深い眠りへ導きます。</p>
-                        <p>脳疲労を取り除き、脳を洗ったようなスッキリ感をご堪能ください。</p>
+                <div class="index-menu-card">
+                    <div class="index-menu-card__image">
+                        <img src="img/parafuse.png" alt="脳洗浄®を受ける女性" />
                     </div>
-                    <table class="menu__box-price">
-                        <tbody>
-                            <tr>
-                                <td class="menu__title">ドライ</td>
-                                <td class="menu__time">70分</td>
-                                <td class="menu__amount">&yen;11,000</td>
-                            </tr>
-                            <tr>
-                                <td class="menu__title">スタンダード</td>
-                                <td class="menu__time">100分</td>
-                                <td class="menu__amount">&yen;16,500</td>
-                            </tr>
-                            <tr>
-                                <td class="menu__title">オーダーメイド</td>
-                                <td class="menu__time">120分</td>
-                                <td class="menu__amount">&yen;22,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="menu__item-right">
-                    <div class="menu__img">
-                        <img src="img/menu.jpg" alt="parfum">
+                    <div class="index-menu-card__content">
+                        <div class="index-menu-card__title">とろける脳洗浄®（全身）</div>
+                        <div class="index-menu-card__description">
+                            <p>自律神経を整えながらゆったり、じっくりほぐし小顔へ導きます。</p>
+                            <p>眠ってしまうほどの癒しの世界へ。</p>
+                            <p>オールハンドの心地よい施術は深い眠りへ導きます。</p>
+                            <p>脳疲労を取り除き、脳を洗ったようなスッキリ感をご堪能ください。</p>
+                        </div>
+                        <a href="/menu.html#parafuse-menu" class="button">詳しくはこちら</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="message"  class="wrapper">
-            <div class="message__flex-item">
-                <div class="message__item-left">
-                    <div class="img">
-                        <img src="img/profile.jpg" alt="profile">
+                <div class="index-menu-card index-menu-card--reverse">
+                    <div class="index-menu-card__image">
+                        <img src="img/kinmaku.jpg" alt="スタンダード＆巻き肩調整を受ける女性" />
+                        <a href="https://www.freepik.com/free-photo/woman-getting-head-massage_982743.htm">Image by katemangostar on Freepik</a>
+                    </div>
+                    <div class="index-menu-card__content">
+                        <div class="index-menu-card__title">すっきり筋膜リンパ（上半身）</div>
+                        <div class="index-menu-card__description">
+                            <p>首肩凝りに特化したオイルマッサージ。</p>
+                            <p>筋膜へアプローチし、芯からすこーんっと凝りを解消します。</p>
+                            <p>顔の左右差を整えながら小顔へ。</p>
+                            <p>肩や背中の軽さに驚くこと間違いなし。</p>
+                        </div>
+                        <a href="/menu.html#kinmaku-menu" class="button">詳しくはこちら</a>
                     </div>
                 </div>
-                <div class="message__item-right">
-                    <div class="message__text">
-                        <p>あなたの身体と心が求める癒しの空間</p>
-                        <p>身体が疲れたとき</p>
-                        <p>心が疲れたとき</p>
-                        <p>そんなときにホッと休める...</p>
-                        <p>癒しの場所がaimiiyでありますように</p>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="section-title">
+                    Message
+                </h2>
+                <div class="index-message-card">
+                    <div class="index-message-card__image">
+                        <img src="img/profile.jpg" alt="サロンオーナー" />
+                    </div>
+                    <div class="index-message-card__content">
+                        <div class="index-message-card__title">オーナー　久田　美波</div>
+                        <div class="index-message-card__description">
+                            <p>身体がつかれたとき、心が疲れたとき。</p>
+                            <p>そんなときにホッと休める。</p>
+                            <p>そんな癒しの場所をご提供します。</p>
+                            <p>ご来店を心からお待ちしております。</p>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="section-title">
+                    ご予約
+                </h2>
+                <div class="index-reservation-concept">
+                    <p>ご予約・お問い合わせはLINEまたはInstagramにて受け付けております。</p>
+                    <p>お気軽にご連絡ください。</p>
+                </div>
+                <div class="index-reservation__buttons">
+                    <a class="button" href="https://lin.ee/DVJ8sNQ">LINE</a>
+                    <a class="button" href="https://www.instagram.com/parafuse.minami.tokushima/">Instagram</a>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="section-title">
+                    Information
+                </h2>
+                <div class="index-info__content">
+                    <dl class="index-info__details">
+                        <div class="index-info-pair">
+                            <dt>住所</dt>
+                            <dd>
+                                <p>〒774-0046　阿南市長生町（長生公民館付近）</p>
+                                <p>詳しい住所はご予約時にお知らせいたします</p>
+                            </dd>
+                        </div>
+                        <div class="index-info-pair">
+                            <dt>営業時間</dt>
+                            <dd>平日 9:30〜　土日祝 10:00〜</dd>
+                        </div>
+                        <div class="index-info-pair">
+                            <dt>定休日</dt>
+                            <dd>不定休、完全予約制</dd>
+                        </div>
+                        <div class="index-info-pair">
+                            <dt>駐車場</dt>
+                            <dd>あり</dd>
+                        </div>
+                        <div class="index-info-pair">
+                            <dt>お支払</dt>
+                            <dd>現金のみ</dd>
+                        </div>
+                    </dl>
+                    <div class="index-info__map">
+                        <img src="img/map.png" alt="aimiiy_map" />
                     </div>
                 </div>
-            </div>
-        </section>
 
-
-        <section id="reservation" class="wrapper">
-            <h2 class="section-title">
-                ご予約
-            </h2>
-            <div class="reservation__text">
-                <p>ご予約・お問い合わせはLINEまたはInstagramにて受け付けております。</p>
-                <p>お気軽にご連絡ください。</p>
-            </div>
-            <div class="reservation__flex-item">
-                <a class="reservation__button" href="https://lin.ee/DVJ8sNQ">LINE</a>
-                <a class="reservation__button" href="https://www.instagram.com/parafuse.tokushima.minami/">Instagram</a>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer id="footer">
-        <ul class="menu">
-            <li><a href="https://lin.ee/DVJ8sNQ">LINE</a></li>
-            <li><a href="https://www.instagram.com/parafuse.tokushima.minami/">Instagram</a></li>
-        </ul>
-        <p class="copyright">&copy; 2024 aimiiy</p>
+    <!-- Footer -->
+    <footer class="l-footer">
+        <div class="l-footer__inner">
+            <div class="l-footer__container">
+                <div class="l-footer__left">
+                    <div class="c-logo">
+                        <img class="c-logo__img" src="img/logo.svg" alt="aimiiy Private Salon logo" class="c-logo__img">
+                    </div>
+
+                    <div class="p-footer-sns">
+                        <a href="https://lin.ee/DVJ8sNQ">
+                            <img class="p-footer-sns__icon" src="img/LINE_Brand_icon.png" alt="LINE" />
+                        </a>
+                        <a href="https://www.instagram.com/parafuse.minami.tokushima/">
+                            <img class="p-footer-sns__icon" src="img/Instagram_Glyph_Gradient.png" alt="Instagram" />
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="p-footer-global-nav">
+                    <ul class="p-footer-global-nav__list">
+                        <li><a href="/" class="p-footer-global-nav__link">HOME</a></li>
+                        <li><a href="/menu.html" class="p-footer-global-nav__link">メニュー</a></li>
+                        <li><a href="/beginners.html" class="p-footer-global-nav__link">初めての方へ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="p-footer__copyright">&copy; 2024 aimiiy</p>
+        </div>
     </footer>
 </body>
 
