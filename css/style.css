@@ -208,7 +208,7 @@ index
 */
 .mainvisual {
     position: relative;
-    height: 600px;
+    max-height: 600px;
     overflow: hidden;
     margin: -1rem -2rem 4rem -2rem;
 }
@@ -227,7 +227,6 @@ index
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 30px;
     padding: 2rem 3.5rem;
-
 }
 
 .mainvisual__catchtext {
