@@ -645,7 +645,9 @@ beginners
 
 /* レスポンシブ対応 */
 @media (max-width: 600px) {
-
+    /*
+    header
+    */
     /* ハンバーガーアイコン表示 */
     .hamburger {
         display: flex;
@@ -675,10 +677,29 @@ beginners
         transform: translateX(0);
     }
 
+    /*
+    footer
+    */
+    .l-footer__container {
+        align-items: unset;
+    }
+
+    .p-footer-global-nav {
+        margin-top: 1rem;
+    }
+    
+    .p-footer-global-nav__list {
+        display: unset;
+    }
+
+
     .section-title {
         font-size: 1.75rem;
     }
 
+    /*
+    meinvisual
+    */
     .mainvisual__inner {
         padding: 2rem 1rem;
         width: 80%;
