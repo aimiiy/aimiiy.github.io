@@ -38,7 +38,7 @@ body {
     font-size: 2.25rem;
     padding: 0 2rem 2rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .button {
@@ -348,20 +348,7 @@ index
     flex-wrap: wrap;
     justify-content: center;
 }
-/*
-.index-message-card__image {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-        .index-message-card__image img {
-            width: 320px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-*/
+
 .index-message-card__image {
     flex: 1 1 300px;
     max-width: 320px;
@@ -511,7 +498,6 @@ menu
     font-size: 1.75rem;
     padding: 0 1rem;
     text-align: center;
-    font-weight: 400;
 }
 .menu-concept {
     padding: 1rem 2rem 2rem;
@@ -580,6 +566,11 @@ menu
 /*
 beginners
 */
+.beginners-subtitle {
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
 .p-beginners-card {
     display: flex;
     align-items: flex-start;
@@ -629,7 +620,7 @@ beginners
 }
 
 .p-beginners__item {
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     max-width: 960px;
 }
 
@@ -640,7 +631,7 @@ beginners
 }
 
 .p-beginners__item-text {
-    color: #333;
+    color: #555;
 }
 
 /* レスポンシブ対応 */
