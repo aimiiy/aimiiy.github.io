@@ -208,6 +208,7 @@ index
 */
 .mainvisual {
     position: relative;
+    height: 600px;
     overflow: hidden;
     margin: -1rem -2rem 4rem -2rem;
 }
@@ -226,24 +227,22 @@ index
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 30px;
     padding: 2rem 3.5rem;
+    max-width: 430px;
 }
 
 .mainvisual__catchtext {
-    font-size: clamp(0.8rem, 2.5vw, 1.7rem);
+    font-size: 1.75rem;
     line-height: 1.8;
-    min-width: 148px;
 }
 
 .mainvisual__logo {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-top: 1rem;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .mainvisual__img {
     width: 100%;
-    max-height: 600px;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -291,7 +290,7 @@ index
 
 .index-concept-card__title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -419,7 +418,7 @@ index
 
 .index-info-pair dt {
     width: 140px;
-    font-weight: bold;
+    font-weight: 500;
     color: #222;
 }
 
@@ -477,7 +476,7 @@ menu
 
 .menu-card__title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -620,7 +619,7 @@ beginners
 
 .p-beginners-card__title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -636,7 +635,7 @@ beginners
 
 .p-beginners__item-title {
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -678,5 +677,21 @@ beginners
 
     .section-title {
         font-size: 1.75rem;
+    }
+
+    .mainvisual__inner {
+        padding: 2rem 1rem;
+        width: 80%;
+    }
+
+    .mainvisual__catchtext {
+        font-size: clamp(1rem, 5vw, 1.75rem);
+        line-height: 1.8;
+    }
+
+    .mainvisual__logo {
+        margin: 0 auto;
+        max-width: 400px;
+        width: 90%;
     }
 }
