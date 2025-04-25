@@ -645,6 +645,10 @@ beginners
 
 /* レスポンシブ対応 */
 @media (max-width: 600px) {
+    .l-main {
+        padding: 1rem 1rem;
+    }
+
     /*
     header
     */
@@ -687,7 +691,7 @@ beginners
     .p-footer-global-nav {
         margin-top: 1rem;
     }
-    
+
     .p-footer-global-nav__list {
         display: unset;
     }
@@ -695,6 +699,7 @@ beginners
 
     .section-title {
         font-size: 1.75rem;
+        padding: 1rem 1rem;
     }
 
     /*
